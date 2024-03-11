@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.FieldOptions {
+	// The attributed field is hidden.
+	// It may contain sensitive data and is not to be shown in plain text.
+	bool is_hidden = 50001;
+}
